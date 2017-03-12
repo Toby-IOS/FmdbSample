@@ -76,7 +76,7 @@
         [db close];
     }
 }
-
+//清除
 - (IBAction)clearAll:(id)sender {
     FMDatabase * db = [FMDatabase databaseWithPath:self.dbPath];
     if ([db open]) {
