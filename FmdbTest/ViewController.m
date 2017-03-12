@@ -21,7 +21,7 @@
 @synthesize dbPath;
 
 #pragma mark - SQL Operations
-
+//创建表
 - (IBAction)createTable:(id)sender {
     debugMethod();
     NSFileManager * fileManager = [NSFileManager defaultManager];
@@ -43,7 +43,7 @@
     }
 }
 
-
+//插入数据
 - (IBAction)insertData:(id)sender {
     static int idx = 1;
     FMDatabase * db = [FMDatabase databaseWithPath:self.dbPath];
